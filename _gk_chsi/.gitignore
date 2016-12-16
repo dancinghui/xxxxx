@@ -1,0 +1,16 @@
+unfetch*
+spec.*
+sch.*
+detail.*
+fetch*
+*.bz2
+*.sh
+res
+hubei
+yggk_*
+log
+*.gz
+undo*
+*.csv
+*.html
+*.txt

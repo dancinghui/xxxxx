@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="python">
+      <UniqueIdentifier>{00048BA5-4826-4C10-8888-32296C1E47A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{C5663116-1773-4222-A102-E8638302983D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vs.proj">
+      <UniqueIdentifier>{8BA97EA9-4CBF-4E5E-89CE-5704945F0BF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cmongo.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\pagestore.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\python\cpagestore.cpp">
+      <Filter>python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\modhelper.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vs.proj\code16.cpp">
+      <Filter>vs.proj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vs.proj\stdafx.cpp">
+      <Filter>vs.proj</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cmongo.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="..\pagestore.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\modhelper.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

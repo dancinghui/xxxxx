@@ -1,0 +1,14 @@
+/r*/
+*.pyc
+*.bin
+*.log
+/envlib/
+.DS_Store
+node_modules
+res.*
+.idea/workspace.xml
+*.o
+**/.idea/*
+lib
+.idea
+*~

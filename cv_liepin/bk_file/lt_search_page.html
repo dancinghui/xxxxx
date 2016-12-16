@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#set var='compatible' value=''-->
+<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+<link rel="icon" href="//concat.lietou-static.com/core/pc/revs/images/common/favicon_1c83d380.ico" type="image/x-icon" />
+<link rel="dns-prefetch" href="//concat.lietou-static.com" />
+<script src="//concat.lietou-static.com/core/pc/revs/js/common/FileManagerClass.min_7ba413d1.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript">FileManager.get('//concat.lietou-static.com/core/pc/revs/js/common/html5shiv_8c839d0c.js');</script>
+<![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript">FileManager.get('//concat.lietou-static.com/core/pc/revs/js/common/DD_belatedPNG_c5971f23.js');</script>
+<script>DD_belatedPNG.fix('.pngfix');</script>
+<![endif]-->
+<script>FileManager.get('//concat.lietou-static.com/core/pc/revs/css/port/h/common_016d429c.css','//concat.lietou-static.com/dev/h/pc/revs/v1/css/public_3c390a0b.css','//concat.lietou-static.com/core/pc/revs/js/common/jquery-1.7.1.min_16deb800.js','//concat.lietou-static.com/core/pc/revs/js/common/lt.core_6d196ea6.js','//concat.lietou-static.com/core/pc/revs/js/port/h/plugins/jquery.artDialog_b107bd49.js','//concat.lietou-static.com/core/pc/revs/js/common/plugins/jquery.loadingui_3291cf87.js','//concat.lietou-static.com/core/pc/revs/js/common/plugins/jquery.tipsui_1c876fcd.js','//concat.lietou-static.com/dev/h/pc/revs/v1/js/lt.apps_2f454c43.js');</script>
+<title>搜索结果页</title>
+</head>
+<body id="findresume-result">
+<!--#set var='compatible' value=''-->
+<header id="header-h-beta2">
+  <div class="header">
+    <div class="wrap">
+      <div class="logo">
+        <a href="http://www.liepin.com/"><img alt="猎聘网logo" class="pngfix" src="//concat.lietou-static.com/core/pc/revs/images/common/logo_e062b0a3.png" width="110" height="40" /><em><i class="icons16 icons16-home-white" title="首页"></i></em></a>
+      </div>
+      <div class="quick-menu"></div>
+    </div>
+  </div>
+  <nav>
+    <div class="wrap">
+      <ul>
+        <li data-name="home">
+          <div class="nav-title"><a href="https://h.liepin.com">我的首页</a></div>
+        </li>
+        <li data-name="publish">
+          <div class="nav-title"><a href="https://h.liepin.com/job/createnewhjob/">发布职位</a></div>
+        </li>
+        <li data-name="resume">
+          <div class="nav-title"><a href="https://h.liepin.com/cvsearch/soCondition/">找人选<sub></sub></a></div>
+          <div class="sub-nav">
+            <p><a href="https://h.liepin.com/cvsearch/soCondition/">找简历</a></p>
+            <p><a href="https://h.liepin.com/talentmanage/showviewresumelist/">浏览过的简历</a></p>
+            <p><a href="https://h.liepin.com/list/solist/">找List</a></p>
+            <p><a href="https://h.liepin.com/talent/socondition/">找名片</a></p>
+          </div>
+        </li>
+        <li data-name="manage">
+          <div class="nav-title"><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=0">职位管理<sub></sub></a></div>
+          <div class="sub-nav">
+            <p><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=0">正在发布的职位</a></p>
+            <p><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=9">待审核的职位</a></p>
+            <p><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=1">已暂停的职位</a></p>
+            <p><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=3">已结束的职位</a></p>
+            <p><a href="https://h.liepin.com/job/showhjoblist/?hjob_status=2">职位草稿箱</a></p>
+            <p><a href="https://h.liepin.com/hjobrecommend/showhjobrecommendlist/">职位推荐记录</a></p>
+          </div>
+        </li>
+       	<li data-name="godten">
+          <div class="nav-title"><a href="https://h.liepin.com/godten/index">面试快<sub></sub><em class="icons16 icons16-new-orange" style="margin-left: 8px;"></em></a></div>
+          <div class="sub-nav">
+            <p><a href="https://h.liepin.com/goduser/showcdkuserinfo/">面试快设置</a></p>
+          </div>
+        </li>
+        <li data-name="connection">
+          <div class="nav-title"><a href="https://h.liepin.com/connection/showmyattentionnew/">人脉管理<sub></sub></a></div>
+          <div class="sub-nav">
+            <p><a href="https://h.liepin.com/connection/showmyattentionnew/">我关注的</a></p>
+            <p><a href="https://h.liepin.com/connection/showattentionme/">关注我的</a></p>
+          </div>
+        </li>
+        <li data-name="resources">
+          <div class="nav-title"><a href="https://h.liepin.com/resumemanage/showmytalentlist">简历管理<sub></sub></a></div>
+          <div class="sub-nav">
+            <p><a href="https://h.liepin.com/resumemanage/showmytalentlist">我的简历库</a></p>
+            <p><a href="https://h.liepin.com/apply/showapplyresumelist/?filter_flag=0">应聘来的简历</a></p>
+            <p><a href="https://h.liepin.com/talentmanage/showdowntalentlist/">已下载的名片</a></p>
+          </div>
+        </li>
+        <li data-name="article">
+          <div class="nav-title"><a href="http://article.liepin.com/h/">同道问答<sub></sub></a></div>
+          <div class="sub-nav">
+            <p><a href="http://article.liepin.com/h/">同道问答</a></p>
+            <p><a href="https://h.liepin.com/dlld/">大猎论道</a></p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+</header>
+<script type="text/javascript">
+FileManager.get('//concat.lietou-static.com/core/pc/revs/css/common/header_eaebff3e.css','//concat.lietou-static.com/core/pc/revs/js/common/header_107c71e5.js');
+</script>
+<div class="wrap resume-search">
+	<div class="submenu">
+	    <nav>
+	      <ul>
+	        <li class="active"><a href="/cvsearch/soCondition/">找简历</a></li>
+	        <li><a href="/talentmanage/showviewresumelist/">浏览过的简历</a></li>
+	        <li><a href="/list/solist/">找LIST</a></li>
+	        <li><a href="/talent/socondition/">找名片</a></li>
+	      </ul>
+	    </nav>
+	</div>
+	<!-- 广告位：猎头登录页banner 勿删除，活动广告位 -->
+  	
+  	<div id="LPAdSlots-23120" class="LPAdSlots"></div>
+	
+	<div class="resume-form">
+		<div class="resume-search-info">
+			<div class="search-info-title">
+				<div class="input-append">
+					<form class="input-append-form" action="/cvsearch/soResume/" method="post">
+          				<span class="input-append-num"><input type="text" placeholder="搜简历编号" validate-title="简历编号" validate-rules="[['required','请填写$'],['dyncheck','keys']]" name="res_ids" class="text input-medium search-query">
+                		<button class="btn" type="submit"></button></span>
+                	</form>
+			          <div class="selectui resume-search-list" data-size="10" data-maxHeight="200" data-dock="false">
+						  <div class="selectui-head">
+						    <input type="hidden" name="" value="" />
+						    <div class="selectui-result" data-name="choose_search_condition">选择简历搜索条件</div>
+						    <div class="selectui-drop"></div>
+						  </div>
+						  <ul>
+						  </ul>
+					 </div>
+		         </div>
+			<h1>当前搜索条件：
+				<span class="orange" title=""></span>
+				<a class="btn btn-light custom-search" data-name="custom-search" href="javascript:;">修改搜索条件</a>
+			</h1>
+		   </div>
+			<div class="search-form">
+			<form autocomplete="off" method="post" action="/cvsearch/soResume/" data-selector="search-form">
+				<input type="hidden" name="cs_id" value="" />
+	    		<input type="hidden" name="csc_id" value="" />
+	    		<input type="hidden" name="form_submit" value="" />
+			    <input type="hidden" name="sortflag" value="" />
+			    <input type="hidden" name="expendflag" value="" />
+			    <input type="hidden" name="pageSize" value="" />
+			    <input type="hidden" name="curPage" value="" />
+			    <input type="hidden" name="userHope" value="" />
+			    <input type="hidden" name="resReward" value="" />
+			    <input type="hidden" name="res_ids" value="" />
+			    <input type="hidden" name="so_flag" value="" />
+				<table class="serach-info-detail">
+		          <thead>
+		            <tr>
+		              <th>关键词</th>
+		              <td>
+		                <input class="text" name="keys" placeholder="多个关键字直接使用空格隔开" value=""/>
+		                <label><input type="checkbox" class="checkbox" name="anykeys" value="1"  />包含任意关键词</label>
+		              </td>
+		            </tr>
+		            <tr>
+		              <th>职位名称</th>
+		              <td>
+		                <input class="text" name="titleKeys" placeholder="最多可输入3个职位名称关键词进行搜索，以空格隔开" value=""/>
+		              </td>
+		            </tr>
+		          </thead>
+		          <tbody>
+		          </tbody>
+		          <tfoot>
+		  			<tr>
+		  				<th></th>
+		  				<td>
+			                <input type="submit" class="btn btn-primary btn-search" data-selector="btn-search" data-name="btn-search" value="搜索人才" />
+			                <a class="btn btn-light" data-selector="btn-save" href="javascript:;">保存搜索条件</a>
+		              	</td>
+		  			</tr>
+		          </tfoot>
+				</table>
+	  		</form>
+				<div class="search-form-slider"><a href="javascript:;"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="result-list">
+	<div class="result-list-title">
+		<div class="list-bar">
+			<p class="float-right">
+				
+				<span>
+					<a class="link-sort-list" data-relation="expendflag|0" href="javascript:;">列表</a>
+					<a class="link-sort-detail lnk-sort-detail-current" data-relation="expendflag|1" href="javascript:;">详细</a>
+				</span>
+				<span>共<i class="text-warning" data-nick="totalcnt">5000+</i>位人选</span>
+				<span>
+					每页显示：
+					<a data-relation="pageSize|20" class="link-page-size ">20</a>
+        			<a data-relation="pageSize|30" class="link-page-size ">30</a>
+        			<a data-relation="pageSize|50" class="link-page-size link-page-size-current">50</a>
+				</span>
+			</p>
+			<p class="float-left">
+				<label><input type="checkbox" class="checkbox" data-selector="checkbox-ui-all" name="ckbox" value="" />全选</label>
+				<a href="javascript:;" class="btn btn-light btn-small link-view-all">批量查看</a>
+			</p>
+		</div>
+		<table class="table-title">
+			<colgroup>
+				<col width="30"></col>
+		        <col width="140"></col>
+		        <col width="50"></col>
+		        <col width="80"></col>
+		        <col width="80"></col>
+		        <col width="110"></col>
+		        <col width="90"></col>
+		        <col width="140"></col>
+		        <col width="*"></col>
+		        <col width="90"></col>		
+			</colgroup>
+			<thead>
+				<th class="text-right"></th>
+				<th class="text-left">姓名</th>
+				<th>性别</th>
+				<th>
+					年龄
+						<em>
+			              <a data-relation="sortflag|5" title="正序" class="link-sort-up ">正序</a>
+			              <a data-relation="sortflag|4" title="倒序" class="link-sort-down ">倒序</a>
+            			</em>
+				</th>
+				<th>
+					学历
+					<em>
+		              <a data-relation="sortflag|10" title="正序" class="link-sort-up ">正序</a>
+		              <a data-relation="sortflag|9" title="倒序" class="link-sort-down ">倒序</a>
+           			</em>
+				</th>
+				<th>
+					工作年限
+					<em>
+		              <a data-relation="sortflag|7" title="正序" class="link-sort-up ">正序</a>
+		              <a data-relation="sortflag|6" title="倒序" class="link-sort-down ">倒序</a>
+           			</em>
+				</th>
+				<th>所在地区</th>
+				<th>当前职位</th>
+				<th class="text-left">目前公司</th>
+				<th>
+					登录时间
+					<em>
+		              <a data-relation="sortflag|8" title="倒序" class="link-sort-down ">倒序</a>
+		            </em>
+				</th>
+			</thead>
+		</table>
+	</div>
+		
+			
+			<table class="table-list">
+			<colgroup>
+				<col width="30"></col>
+		        <col width="140"></col>
+		        <col width="50"></col>
+		        <col width="80"></col>
+		        <col width="80"></col>
+		        <col width="110"></col>
+		        <col width="90"></col>
+		        <col width="140"></col>
+		        <col width="*"></col>
+		        <col width="90"></col>		
+			</colgroup>
+			<tbody>
+			
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9880794054C2039714744" data-name="王雪" data-userid="20469428" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9880794054C2039714744" class="mark" target="_blank" title="王雪" data-selector="link-resume"><strong>王雪</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					30岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  7年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="市场总监">市场总监</td>
+					<td class="text-left" title="美业邦(北京)科技有限公司">美业邦(北京)科技有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2006/09 - 2010/07：北京工业大学 | 企业管理 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.02 - 2015.11(9个月) | 美业邦(北京)科技有限公司 | 市场总监<br/>2014.03 - 2015.02(11个月) | 北京河狸家信息技术有限公司 | 类目运营经理<br/>2009.10 - 2013.03(3年5个月) | 北京伊人城业健康美容有限责任公司 | 运营经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9880784136K2039704232" data-name="林涛" data-userid="20460404" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9880784136K2039704232" class="mark" target="_blank" title="林涛" data-selector="link-resume"><strong>林涛</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					37岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  13年
+				  </td>
+					<td title="杭州-西湖区">杭州-西湖区</td>
+					<td title="水专业负责人，机电副设总">水专业负责人，机…</td>
+					<td class="text-left" title="基准方中建筑设计有限公司">基准方中建筑设计有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1999/09 - 2003/07：重庆大学 | 给水排水工程 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2013.03 - 2015.03(2年) | 成都基准方中建筑设计有限公司 | 给排水专业负责人，机电副设总<br/>2011.02 - 2013.02(2年) | 浙江杭州绿城九米建筑设计有限公司 | 给排水专业负责人<br/>2007.10 - 2010.01(2年3个月) | 中国联合工程公司 | 给排水专负
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4461671034o1785819530" data-name="万起洁" data-userid="24298331" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4461671034o1785819530" class="mark" target="_blank" title="万起洁" data-selector="link-resume"><strong>万起洁</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					48岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  28年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="总裁助理">总裁助理</td>
+					<td class="text-left" title="北京天地控股集团北京公司">北京天地控股集团北京公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2002/09 - 2006/07：首都财经管理学院 | 工程管理 | 本科<br/>1996/07 - 2000/01：北京建筑工程学院 | 建筑管理 | 大专<br/>1984/09 - 1988/07：北京建筑工程学校 | 工民建 | 中专
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.06 - 至今(1年7个月) | 北京天地控股集团北京公司 | 总裁助理<br/>2011.09 - 2014.04(2年7个月) | 亚泰集团亚泰地产天津公司 | 副总经理<br/>2006.01 - 2011.08(5年7个月) | 北京方恒置业股份有限公司 | 工程总监
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4802164718i2962461608" data-name="薛先生" data-userid="4778622" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4802164718i2962461608" class="mark" target="_blank" title="薛先生" data-selector="link-resume"><strong>薛先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					42岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  17年
+				  </td>
+					<td title="南通">南通</td>
+					<td title="CEO">CEO</td>
+					<td class="text-left" title="江苏涌鑫汽车集团">江苏涌鑫汽车集团</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2011/04 - 2013/04：北京大学 | 私募股权投资 | 硕士<br/>1996/09 - 1999/09：北京行政管理学院 | 行政管理学 | 硕士<br/>1992/09 - 1996/06：徐州师范大学 | 法学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.04 - 至今(1年9个月) | 江苏涌鑫汽车集团 | CEO<br/>2012.01 - 2014.04(2年3个月) | 广汇汽车集团【股票代码：600297】 | 区域总经理<br/>2005.03 - 2012.01(6年10个月) | 北京联拓集团【纽交所代码：LAS】 | COO
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="7556035692F3099107248" data-name="徐凯一" data-userid="7533207" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=7556035692F3099107248" class="mark" target="_blank" title="徐凯一" data-selector="link-resume"><strong>徐凯一</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					34岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  10年
+				  </td>
+					<td title="杭州">杭州</td>
+					<td title="杭州业务经理">杭州业务经理</td>
+					<td class="text-left" title="内蒙古伊利实业集团股份有限公司奶粉事业部">内蒙古伊利实业集团股份…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2002/09 - 2006/07：浙江工商大学 | 工商管理 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2011.04 - 至今(4年9个月) | 内蒙古伊利实业集团股份有限公司奶粉事业部 | 杭州业务经理<br/>2008.04 - 2011.03(2年11个月) | 农夫山泉 | 杭州企划<br/>2006.07 - 2007.07(1年) | 杭州顶园食品有限公司 | 杭州企划MS
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5675130232x3096078995" data-name="宋瑞雪" data-userid="27094993" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5675130232x3096078995" class="mark" target="_blank" title="宋瑞雪" data-selector="link-resume"><strong>宋瑞雪</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					26岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  2年
+				  </td>
+					<td title="美国">美国</td>
+					<td title="普通职员">普通职员</td>
+					<td class="text-left" title="美国科凯银行">美国科凯银行</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2012/08 - 2014/01：美国凯斯西储大学 | 金融学   方向 风险管理 | 硕士<br/>2008/09 - 2012/07：浙江大学竺可桢学院 | 金融学 英语 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.03 - 2015.02(11个月) | 美国科凯银行 | 普通职员
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9881560712y2475344746" data-name="艾丽思" data-userid="19970662" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9881560712y2475344746" class="mark" target="_blank" title="艾丽思" data-selector="link-resume"><strong>艾丽思</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					34岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  11年
+				  </td>
+					<td title="北京-东城区">北京-东城区</td>
+					<td title="高级经理">高级经理</td>
+					<td class="text-left" title="乐视网信息技术(北京)股份有限公司">乐视网信息技术(北京)股…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/09 - 2012/07：北京航空航天大学 | 软件工程 | 硕士<br/>2001/09 - 2005/07：天津大学 | 计算机科学与技术 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.01 - 至今(1年) | 乐视网信息技术(北京)股份有限公司 | 高级经理<br/>2008.11 - 2014.12(6年1个月) | 微软移动 | 项目经理<br/>2007.06 - 2008.11(1年5个月) | 摩托罗拉系统(中国)有限公司北京分公司 | 软件测试开发工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9041235234F2674571432" data-name="尹先生" data-userid="1833025" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9041235234F2674571432" class="mark" target="_blank" title="尹先生" data-selector="link-resume"><strong>尹先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  11年
+				  </td>
+					<td title="陕西省">陕西省</td>
+					<td title="人力资源总监">人力资源总监</td>
+					<td class="text-left" title="西安西瑞控制技术股份有限公司">西安西瑞控制技术股份有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2006/09 - 2008/07：陕西师范大学 | 法学 | 本科<br/>2002/09 - 2005/07：西安石油大学 | 法律 | 大专
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.02 - 至今(11个月) | 西安西瑞控制技术股份有限公司 | 人力资源总监<br/>2007.05 - 2013.03(5年10个月) | 青岛啤酒榆林有限责任公司 | 人力资源部长<br/>2005.07 - 2007.04(1年9个月) | 陕西中大产权交易有限公司 | 培训及招聘专员
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9121051573v2965598648" data-name="徐捷文" data-userid="20338441" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9121051573v2965598648" class="mark" target="_blank" title="徐捷文" data-selector="link-resume"><strong>徐捷文</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					29岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  7年
+				  </td>
+					<td title="上海">上海</td>
+					<td title="项目经理">项目经理</td>
+					<td class="text-left" title="上海天艺建筑装饰工程有限公司">上海天艺建筑装饰工程有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2005/09 - 2009/07：西安科技大学 | 室内设计 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2009.11 - 至今(6年2个月) | 上海天艺建筑装饰工程有限公司 | 项目经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4960376921S2827657119" data-name="王振峰" data-userid="121230" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4960376921S2827657119" class="mark" target="_blank" title="王振峰" data-selector="link-resume"><strong>王振峰</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					42岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  18年
+				  </td>
+					<td title="沈阳">沈阳</td>
+					<td title="运营总监(工厂经理）">运营总监(工厂经理…</td>
+					<td class="text-left" title="沈阳施道克电力设备有限公司">沈阳施道克电力设备有限…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1994/09 - 1998/07：沈阳理工大学 | 管理工程 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.11 - 至今(1年2个月) | 沈阳施道克电力设备有限公司 | 运营总监(工厂经理）<br/>2014.01 - 2014.11(10个月) | 沈阳防锈包装材料有限责任公司 | 生产副总<br/>2011.06 - 2013.09(2年3个月) | 中联重科建筑起重机公司上海分公司 | 运营经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9043281400k2675557304" data-name="黄女士" data-userid="13216736" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9043281400k2675557304" class="mark" target="_blank" title="黄女士" data-selector="link-resume"><strong>黄女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					43岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  21年
+				  </td>
+					<td title="深圳-南山区">深圳-南山区</td>
+					<td title="金融行业 副总监">金融行业 副总监</td>
+					<td class="text-left" title="尼尔森市场研究有限公司">尼尔森市场研究有限公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/05 - 2011/07：复旦大学 | 高级工商管理硕士 | MBA/EMBA<br/>2002/09 - 2005/07：华东师范大学 | 心理学 | 本科<br/>1993/09 - 1995/07：中国石油大学机械系 |  机械工艺与设备制造专业 | 大专
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.10 - 至今(1年3个月) | 尼尔森市场研究有限公司 | 金融行业 副总监<br/>2006.08 - 2014.09(8年1个月) | 上海汇研市场营销顾问有限公司 | 合伙人<br/>2004.01 - 2006.05(2年4个月) | 新生代市场监测机构上海分公司 | 高级研究经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9883803829P2037019018" data-name="宋思博" data-userid="19023798" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9883803829P2037019018" class="mark" target="_blank" title="宋思博" data-selector="link-resume"><strong>宋思博</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					32岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  9年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="North APAC IT Manager">North APAC IT Man…</td>
+					<td class="text-left" title="First Advantage">First Advantage</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2010/09 - 2013/07：University of Chinese Academy of Sciences | Master of Business Administration | MBA/EMBA<br/>2003/09 - 2007/07：Beijing University of Technology | Computer Science | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.08 - 2015.11(3个月) | First Advantage | North APAC IT Manager (Project Base)<br/>2010.04 - 2015.03(4年11个月) | Misys | China IT Manager<br/>2008.07 - 2010.03(1年8个月) | T-systems P.R China Ltd |  IT ac...
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9601642230K2326301360" data-name="李雪茹" data-userid="19180015" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9601642230K2326301360" class="mark" target="_blank" title="李雪茹" data-selector="link-resume"><strong>李雪茹</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					29岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  4年
+				  </td>
+					<td title="南京-浦口区">南京-浦口区</td>
+					<td title="物流主管">物流主管</td>
+					<td class="text-left" title="陶氏化学">陶氏化学</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/09 - 2012/06：南京大学 | 应用化学 | 硕士<br/>2005/09 - 2009/06：长春理工大学 | 精细化工 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.04 - 2015.12(1年8个月) | 陶氏化学 | 物流主管<br/>2012.08 - 2014.04(1年8个月) | 陶氏化学 | 生产工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9880806302I2477291882" data-name="高先生" data-userid="26931101" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9880806302I2477291882" class="mark" target="_blank" title="高先生" data-selector="link-resume"><strong>高先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					44岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  16年
+				  </td>
+					<td title="广州">广州</td>
+					<td title="副总经理（主持工作）">副总经理（主持工…</td>
+					<td class="text-left" title="某寿险省分公司">某寿险省分公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1999/09 - 2002/07：暨南大学 | 工商企业管理 | 硕士
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.07 - 至今(1年6个月) | 某寿险公司 | 副总经理<br/>2012.06 - 2014.06(2年) | 某寿险公司 | 总经理助理<br/>2006.09 - 2012.06(5年9个月) | 某大型国有寿险公司 | 中心支公司总经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9048321427L2679152522" data-name="张丹" data-userid="15926780" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9048321427L2679152522" class="mark" target="_blank" title="张丹" data-selector="link-resume"><strong>张丹</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					33岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  11年
+				  </td>
+					<td title="北京-海淀区">北京-海淀区</td>
+					<td title="董事长助理">董事长助理</td>
+					<td class="text-left" title="AAG (AAG Energy Holdings Limited)">AAG (AAG Energy Holdin…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2008/07 - 2010/07：中国人民大学 | 金融学 | 硕士<br/>2001/09 - 2005/07：北京林业大学 | 英语 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.11 - 2016.01(1年2个月) | AAG (AAG Energy Holdings Limited) | 董事长助理<br/>2007.04 - 2014.07(7年3个月) | 阿尔斯通(中国)投资有限公司 | 阿尔斯通（中国）投资有限公司总裁助理<br/>2005.07 - 2007.04(1年9个月) | 中国铁道科学研究院 | 项目主管
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9887475646q2475342019" data-name="彭先生" data-userid="26538071" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9887475646q2475342019" class="mark" target="_blank" title="彭先生" data-selector="link-resume"><strong>彭先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					41岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  18年
+				  </td>
+					<td title="惠州">惠州</td>
+					<td title="副总裁">副总裁</td>
+					<td class="text-left" title="广东和天下置业集团有限公司">广东和天下置业集团有限…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2014/04 - 2015/10：北京大学北大汇丰商学院 | 工商管理 | MBA/EMBA<br/>2010/09 - 2013/07：武汉工业学院 | 土木工程管理 | 本科<br/>2006/09 - 2009/07：四川大学 | 电气工程及其自动化 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2010.10 - 至今(5年3个月) | 广东和天下置业集团有限公司 | 副总裁<br/>2009.10 - 2010.10(1年) | 深圳市皇庭房地产开发有限公司 | 成本经理<br/>2007.03 - 2009.09(2年6个月) | 北大资源集团有限公司 | 安装造价主管
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="7879783574u3283129194" data-name="张先生" data-userid="1138562" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=7879783574u3283129194" class="mark" target="_blank" title="张先生" data-selector="link-resume"><strong>张先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					48岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  25年
+				  </td>
+					<td title="上海">上海</td>
+					<td title="Director Sales & Marketing China">Director Sales & …</td>
+					<td class="text-left" title="Leister Technologies Ltd.">Leister Technologies L…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2004/12 - 2006/07：University of Texas at Arlington & Tongji University | EMBA | MBA/EMBA<br/>1987/09 - 1991/07：Harbin Shipbuilding Engineering Institute (Former: Harbin Military Engineering Institute) | Mechanical Design and Manufacturing | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2012.03 - 2015.11(3年8个月) | Leister Technologies Ltd. | Director Sales & Marketing China<br/>2009.11 - 2011.07(1年8个月) | Federal-Mogul (China) Co., Ltd. | OE Sales Director<br/>2006.01 - 2009.11(3年10个月)...
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4466121159Y1788054154" data-name="刘信" data-userid="26415658" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4466121159Y1788054154" class="mark" target="_blank" title="刘信" data-selector="link-resume"><strong>刘信</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					31岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  8年
+				  </td>
+					<td title="广州">广州</td>
+					<td title="商务经理">商务经理</td>
+					<td class="text-left" title="广州合摩计算机科技有限公司">广州合摩计算机科技有限…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2003/09 - 2007/07：武汉大学商学院 | 会计学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.02 - 至今(11个月) | 广州合摩计算机科技有限公司 | 商务经理<br/>2014.01 - 2015.02(1年1个月) | 万仕道(北京)管理咨询有限公司广州分公司 | 销售经理<br/>2009.03 - 2014.01(4年10个月) | 北京网聘咨询有限公司广州分公司 | 客户经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4566466506k2039722122" data-name="刘杰" data-userid="5859402" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4566466506k2039722122" class="mark" target="_blank" title="刘杰" data-selector="link-resume"><strong>刘杰</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					28岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  5年
+				  </td>
+					<td title="上海">上海</td>
+					<td title="客户经理">客户经理</td>
+					<td class="text-left" title="上海汽车集团财务有限责任公司">上海汽车集团财务有限责…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2007/09 - 2011/07：西北大学 | 日语 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.05 - 至今(8个月) | 上海汽车集团财务有限责任公司 | 客户经理<br/>2011.07 - 2015.05(3年10个月) | 中粮集团有限公司（COFCO） | 区域销售主管
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5564924767Z3281218169" data-name="陈女士" data-userid="24493860" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5564924767Z3281218169" class="mark" target="_blank" title="陈女士" data-selector="link-resume"><strong>陈女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					33岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  14年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="投资总监 市场总监">投资总监 市场总监</td>
+					<td class="text-left" title="北京祥云凤凰资产管理有限公司">北京祥云凤凰资产管理有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/09 - 2012/07：对外经济贸易大学 | MBA | MBA/EMBA<br/>2002/09 - 2006/07：对外经济贸易大学 | 英文专业 经济新闻报道方向 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.09 - 至今(4个月) | 北京祥云凤凰资产管理有限公司 | 投资总监 市场总监<br/>2012.09 - 2015.09(3年) | 梅赛德斯-奔驰汽车金融有限公司 | 销售运营经理<br/>2007.08 - 2012.09(5年1个月) | 戴姆勒东北亚投资有限公司 | 全球业务 管理人员发展部助理经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="6887664613y1908650152" data-name="余荣华" data-userid="9013280" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=6887664613y1908650152" class="mark" target="_blank" title="余荣华" data-selector="link-resume"><strong>余荣华</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  10年
+				  </td>
+					<td title="深圳-南山区">深圳-南山区</td>
+					<td title="业务总监">业务总监</td>
+					<td class="text-left" title="Anker">Anker</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2002/09 - 2006/07：北京国际关系学院 | 国际政治 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.08 - 至今(5个月) | Anker | 业务总监<br/>2009.03 - 2015.08(6年5个月) | 广州宝洁有限公司 | 电商渠道高级市场经理<br/>2006.06 - 2009.03(2年9个月) | 北京拓源信息咨询有限公司 | 高级咨询顾问
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9127763916g2965616761" data-name="岳先生" data-userid="27025815" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9127763916g2965616761" class="mark" target="_blank" title="岳先生" data-selector="link-resume"><strong>岳先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					40岁
+					</td>
+					<td title="博士">博士</td>
+					<td>
+				  17年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="总裁助理">总裁助理</td>
+					<td class="text-left" title="大华">大华</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2010/09 - 2015/12：大连理工大学 | 技术经济及管理 | 博士<br/>2004/09 - 2007/03：哈尔滨工程大学 | 计算机 | 硕士<br/>1995/09 - 1999/07：哈尔滨工程大学 | 计算机 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2010.09 - 2015.12(5年3个月) | 大连理工大学生态规划与发展研究所 | 经济研究员<br/>2010.09 - 2013.12(3年3个月) | 大连华信计算机技术股份有限公司 | 总裁助理<br/>2004.09 - 2010.09(6年) | 黑龙江中软计算机股份有限公司 | 副总裁
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4261224954g2830156650" data-name="葛先生" data-userid="2425219" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4261224954g2830156650" class="mark" target="_blank" title="葛先生" data-selector="link-resume"><strong>葛先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					34岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  9年
+				  </td>
+					<td title="江苏省">江苏省</td>
+					<td title="运营部工程经理">运营部工程经理</td>
+					<td class="text-left" title="丰盛绿建集团">丰盛绿建集团</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2003/09 - 2007/06：中国矿业大学 | 土木工程 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.06 - 至今(7个月) | 丰盛绿建集团 | 运营部工程经理<br/>2014.08 - 2015.06(10个月) | 江苏华厦融创置地集团有限公司南京分公司 | 总经理助理兼工程部经理<br/>2014.08 - 2015.06(10个月) | 江苏华厦集团南京分公司 | 工程部经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="7125328295J3096677023" data-name="尹先生" data-userid="1054482" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=7125328295J3096677023" class="mark" target="_blank" title="尹先生" data-selector="link-resume"><strong>尹先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					57岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  34年
+				  </td>
+					<td title="朝阳">朝阳</td>
+					<td title="总经理">总经理</td>
+					<td class="text-left" title="沈阳某重工集团">沈阳某重工集团</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1978/09 - 1982/07：沈阳建筑大学 | 建筑机械 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2012.01 - 至今(4年) | 沈阳某重工集团 | 总经理<br/>2009.04 - 2011.11(2年7个月) | 合肥某重工集团                    我的电话是：18104916866 |  运营生产副总经理<br/>2005.09 - 2008.12(3年3个月) | 沈阳某重工集团                      我的电话是：18104916866 |...
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9123955971O2960222888" data-name="徐先生" data-userid="24334634" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9123955971O2960222888" class="mark" target="_blank" title="徐先生" data-selector="link-resume"><strong>徐先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					31岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  8年
+				  </td>
+					<td title="济南">济南</td>
+					<td title="邮轮部经理">邮轮部经理</td>
+					<td class="text-left" title="山东旅游有限公司">山东旅游有限公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2012/01 - 2015/06：山东大学 | 人力资源管理 | 本科<br/>2005/09 - 2008/06：山东女子学院 | 涉外旅游 | 大专
+		              </div>
+		              <div class="table-list-info-r">
+		                	2011.05 - 至今(4年8个月) | 山东旅游有限公司 | 邮轮部经理<br/>2008.11 - 2010.05(1年6个月) | 意大利歌诗达邮轮 | 服务生
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9887475353x2475332536" data-name="袁捷欧" data-userid="27034145" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9887475353x2475332536" class="mark" target="_blank" title="袁捷欧" data-selector="link-resume"><strong>袁捷欧</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					32岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  9年
+				  </td>
+					<td title="武汉-武昌区">武汉-武昌区</td>
+					<td title="技术管理">技术管理</td>
+					<td class="text-left" title="武汉钢铁集团开圣科技有限责任公司">武汉钢铁集团开圣科技有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2003/09 - 2007/07：中国地质大学(武汉) | 资源勘查工程 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2011.06 - 至今(4年7个月) | 武汉钢铁集团开圣科技有限责任公司 | 技术管理<br/>2007.07 - 2011.05(3年10个月) | 中国石化胜利油田孤东采油厂 | 技术管理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9751010965T2475929738" data-name="陆先生" data-userid="22692205" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9751010965T2475929738" class="mark" target="_blank" title="陆先生" data-selector="link-resume"><strong>陆先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  11年
+				  </td>
+					<td title="广东省">广东省</td>
+					<td title="高级采购经理">高级采购经理</td>
+					<td class="text-left" title="沃尔玛（中国）投资有限公司">沃尔玛（中国）投资有限…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2001/09 - 2005/07：湖南师范大学 | 政治学与行政学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2013.10 - 2015.07(1年9个月) | 沃尔玛（中国）投资有限公司 | 高级采购经理<br/>2005.07 - 2013.10(8年3个月) | 深圳市国美电器有限公司 | 对公业务经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5835270789V3098582960" data-name="钟杰" data-userid="19116149" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5835270789V3098582960" class="mark" target="_blank" title="钟杰" data-selector="link-resume"><strong>钟杰</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  10年
+				  </td>
+					<td title="上海">上海</td>
+					<td title="主任科员">主任科员</td>
+					<td class="text-left" title="中央驻沪机关">中央驻沪机关</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2002/09 - 2009/07：湖南农业大学 | 土地资源管理 | 硕士
+		              </div>
+		              <div class="table-list-info-r">
+		                	2006.08 - 至今(9年5个月) | 国土管理部门 | 主任科员<br/>2007.11 - 至今(8年2个月) | 中央驻沪机关 | 主任科员<br/>2006.08 - 2007.11(1年3个月) | 湖南省地市级国土资源管理部门 | 科员
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="6275249495B1786342056" data-name="王天殿" data-userid="574601" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=6275249495B1786342056" class="mark" target="_blank" title="王天殿" data-selector="link-resume"><strong>王天殿</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					30岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  8年
+				  </td>
+					<td title="深圳">深圳</td>
+					<td title="深圳办事处经理">深圳办事处经理</td>
+					<td class="text-left" title="常州华威新材料有限公司">常州华威新材料有限公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2015/09 - 至今：同济大学 | 工商管理 | MBA/EMBA<br/>2004/09 - 2008/06： 武汉理工大学 | 工业工程专业 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.03 - 至今(10个月) | 常州华威新材料有限公司 | 深圳办事处经理<br/>2010.08 - 2015.03(4年7个月) | 三星SDI/深圳分公司 | 副经理<br/>2008.06 - 2010.08(2年2个月) | 深超光电(深圳)有限公司 | 项目工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9545504365H2963845233" data-name="杜女士" data-userid="21682352" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9545504365H2963845233" class="mark" target="_blank" title="杜女士" data-selector="link-resume"><strong>杜女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					43岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  21年
+				  </td>
+					<td title="深圳-南山区">深圳-南山区</td>
+					<td title="高级经理">高级经理</td>
+					<td class="text-left" title="TCL多媒体科技控股有限公司">TCL多媒体科技控股有限…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/05 - 2010/06：TCL集团领导力开发学院 | TCL飞鹰系列管理培训 | 本科<br/>1991/09 - 1995/07：兰州商学院 | 会计专业 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	1999.01 - 至今(17年) | TCL多媒体科技控股有限公司 | 高级经理<br/>1995.07 - 1998.12(3年5个月) | LG电子（惠州）有限公司 | 总账会计及财务分析
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4115445584q1788855224" data-name="栗晋升" data-userid="19772208" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4115445584q1788855224" class="mark" target="_blank" title="栗晋升" data-selector="link-resume"><strong>栗晋升</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					36岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  12年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="副总">副总</td>
+					<td class="text-left" title="聚匠工场">聚匠工场</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1997/09 - 2004/03：北京理工大学 | 自动控制 | 硕士<br/>1997/09 - 2001/07：北京理工大学 | 自动控制 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.10 - 至今(3个月) | 聚匠工场 | 副总<br/>2012.07 - 2015.09(3年2个月) | 易能(中国)电力科技有限公司 | 副总(主管研发、供应链、质量与运营)<br/>2011.04 - 2012.07(1年3个月) | 华为技术有限公司 | 系统架构设计师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4462402398T1786361962" data-name="周松玉" data-userid="26119726" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4462402398T1786361962" class="mark" target="_blank" title="周松玉" data-selector="link-resume"><strong>周松玉</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					49岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  27年
+				  </td>
+					<td title="南京">南京</td>
+					<td title="运营总监">运营总监</td>
+					<td class="text-left" title="科倍隆(南京)机械有限公司">科倍隆(南京)机械有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2008/09 - 至今：中南财经政法大学MBA学院 | MBA | MBA/EMBA<br/>1985/09 - 1989/08：合肥工业大学 | 工业电气自动化专业 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2010.08 - 至今(5年5个月) | 科倍隆(南京)机械有限公司 | 运营总监<br/>2000.01 - 2010.07(10年6个月) | 豪德机械（上海）有限公司 | 生产部经理<br/>1989.08 - 1999.12(10年4个月) | 南京伯乐集团 | 电气工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9603488483s2040490617" data-name="张罗生" data-userid="25504393" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9603488483s2040490617" class="mark" target="_blank" title="张罗生" data-selector="link-resume"><strong>张罗生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					60岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  42年
+				  </td>
+					<td title="株洲">株洲</td>
+					<td title="正科级科员">正科级科员</td>
+					<td class="text-left" title="国税稽查">国税稽查</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1993/09 - 1996/07：中共中央党校 | 经济管理 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	1993.09 - 至今(22年4个月) | 国税稽查 | 正科级科员
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9603373771t2327345576" data-name="杨思瑞" data-userid="20533932" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9603373771t2327345576" class="mark" target="_blank" title="杨思瑞" data-selector="link-resume"><strong>杨思瑞</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					34岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  12年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="HRIS 经理">HRIS 经理</td>
+					<td class="text-left" title="龙湖集团">龙湖集团</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2012/09 - 2015/07：对外经济贸易大学 | 工商管理 | 硕士<br/>2000/09 - 2004/07：华南理工大学 | 计算机 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.05 - 至今(1年8个月) | 龙湖集团 | HRIS 经理<br/>2012.07 - 2014.05(1年10个月) | 德勤咨询 | 执行经理<br/>2010.07 - 2012.07(2年) | 甲骨文公司 | 人力资源项目组组长
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4312161689v2477306040" data-name="黄先生" data-userid="7989225" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4312161689v2477306040" class="mark" target="_blank" title="黄先生" data-selector="link-resume"><strong>黄先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  9年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="医疗器械国际市场部门经理">医疗器械国际市场…</td>
+					<td class="text-left" title="北京华方科泰医药有限公司">北京华方科泰医药有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2004/09 - 2008/03：新西兰奥克兰大学 | 1：经济学  2：国际金融 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.02 - 2015.05(1年3个月) | 北京华方科泰医药有限公司 | 医疗器械国际市场部门经理<br/>2011.11 - 2013.11(2年) | 纳通医疗集团 | 国际市场部国家经理<br/>2008.12 - 2011.01(2年1个月) | Bank of NewZealand | Private Banker
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4579716262F1902810040" data-name="仝先生" data-userid="23403588" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4579716262F1902810040" class="mark" target="_blank" title="仝先生" data-selector="link-resume"><strong>仝先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					36岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  13年
+				  </td>
+					<td title="北京-朝阳区">北京-朝阳区</td>
+					<td title="总经理-哥伦比亚国家公司">总经理-哥伦比亚国…</td>
+					<td class="text-left" title="安东石油美洲大区">安东石油美洲大区</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2004/09 - 2007/07：长江大学（江汉石油学院） | 机械设计及理论 | 硕士<br/>1999/09 - 2003/07：中北大学（华北工学院） | 机械设计制造机自动化 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2013.08 - 至今(2年5个月) | 安东石油美洲大区 | 副总经理-美洲大区<br/>2007.09 - 2013.08(5年11个月) | 安东石油技术(集团)有限公司 | 副总经理 ,完井集团
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9744039781V2473247647" data-name="李女士" data-userid="12382321" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9744039781V2473247647" class="mark" target="_blank" title="李女士" data-selector="link-resume"><strong>李女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					29岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  6年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="行政主管">行政主管</td>
+					<td class="text-left" title="北京市盈科律师事务所">北京市盈科律师事务所</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2015/08 - 至今：新西兰南方理工学院 | 商业企业管理 | 硕士<br/>2006/09 - 2010/07：北京中医药大学 | 工商管理 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2012.05 - 2015.07(3年2个月) | 北京市盈科律师事务所 | 办公室主任（行政主管）<br/>2010.07 - 2012.01(1年6个月) | 华澳酒业集团北京分公司 | 区域运营主管
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4590665072V2477288049" data-name="李女士" data-userid="2406789" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4590665072V2477288049" class="mark" target="_blank" title="李女士" data-selector="link-resume"><strong>李女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					29岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  7年
+				  </td>
+					<td title="加拿大">加拿大</td>
+					<td title="客户经理">客户经理</td>
+					<td class="text-left" title="华为技术有限公司">华为技术有限公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2015/03 - 9999/07：加拿大毅伟商学院 | MBA | MBA/EMBA<br/>2005/09 - 2009/06：上海外国语大学 | 葡萄牙语言文化 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2009.08 - 2013.07(3年11个月) | 华为技术有限公司 | 客户经理<br/>2009.04 - 2009.06(2个月) | 上海赢思软件技术有限公司 | 市场专员<br/>2008.07 - 2008.08(1个月) | 兴业银行杭州分行 | 实习
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4102970228P1788840554" data-name="梁先生" data-userid="15965836" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4102970228P1788840554" class="mark" target="_blank" title="梁先生" data-selector="link-resume"><strong>梁先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					33岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  9年
+				  </td>
+					<td title="北京-朝阳区">北京-朝阳区</td>
+					<td title="CEO/总裁">CEO/总裁</td>
+					<td class="text-left" title="北京赛科广告传媒有限公司">北京赛科广告传媒有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2003/09 - 2007/07：华北电力大学 | 软件工程 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2009.09 - 至今(6年4个月) | 北京赛科广告传媒有限公司 | CEO/总裁<br/>2014.12 - 至今(1年1个月) | 数创信息技术有限公司 | 首席技术执行官CTO<br/>2007.07 - 2009.09(2年2个月) | NEUSOFT 东软集团 | 研发工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9880388985v2041103210" data-name="林卫民" data-userid="4299460" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9880388985v2041103210" class="mark" target="_blank" title="林卫民" data-selector="link-resume"><strong>林卫民</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					44岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  20年
+				  </td>
+					<td title="北京-朝阳区">北京-朝阳区</td>
+					<td title="高级合伙人">高级合伙人</td>
+					<td class="text-left" title="北京北大纵横管理咨询有限责任公司">北京北大纵横管理咨询有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1999/09 - 2001/07：北京大学光华管理学院 | MBA | MBA/EMBA<br/>1992/09 - 1996/07：四川外语学院英语系 | 英语 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2002.02 - 至今(13年11个月) | 北京北大纵横管理咨询公司 | 高级合伙人<br/>1996.09 - 2001.12(5年3个月) | 万盟投资管理／东方高圣投资顾问公司 | 项目经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9533720569M2964362152" data-name="宿晨" data-userid="14815932" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9533720569M2964362152" class="mark" target="_blank" title="宿晨" data-selector="link-resume"><strong>宿晨</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					30岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  6年
+				  </td>
+					<td title="辽宁省">辽宁省</td>
+					<td title="项目管理工程师">项目管理工程师</td>
+					<td class="text-left" title="北京四海消防工程有限公司沈阳分公司">北京四海消防工程有限公…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2006/09 - 2010/07：沈阳建筑大学 | 土木工程（建筑工程方向） | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.12 - 2015.09(9个月) | 中国化学工业桂林工程有限公司 | 建筑设计师<br/>2012.01 - 2014.12(2年11个月) | 沈阳化工研究院设计工程有限公司 | 建筑设计师<br/>2010.07 - 2012.01(1年6个月) | 沈阳新纪化学有限公司 | 基建工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="6880877637B1905488287" data-name="纪女士" data-userid="2459645" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=6880877637B1905488287" class="mark" target="_blank" title="纪女士" data-selector="link-resume"><strong>纪女士</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					29岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  6年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="marketing communication">marketing communi…</td>
+					<td class="text-left" title="斯伦贝谢中国公司">斯伦贝谢中国公司</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2008/07 - 2009/07：悉尼大学 | 大众传播 | 硕士<br/>2004/09 - 2008/07：中国传媒大学 | 文学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2013.08 - 至今(2年5个月) | 斯伦贝谢中国公司 | marketing communication<br/>2012.08 - 2013.08(1年) | 麦肯锡(上海)咨询有限公司 | 麦肯锡领导力学院专员，对外关系<br/>2010.01 - 2012.08(2年7个月) | 加拿大加中贸易理事会 | 高级活动专员
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5837713328c3099814595" data-name="金先生" data-userid="23728284" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5837713328c3099814595" class="mark" target="_blank" title="金先生" data-selector="link-resume"><strong>金先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					43岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  21年
+				  </td>
+					<td title="上海-徐汇区">上海-徐汇区</td>
+					<td title="财务总监">财务总监</td>
+					<td class="text-left" title="华菱星马汽车集团股份有限公司">华菱星马汽车集团股份有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2013/09 - 至今：合肥工业大学 | 工业工程金融方向 | 硕士<br/>2010/09 - 2013/07：南京大学 | EMBA | MBA/EMBA
+		              </div>
+		              <div class="table-list-info-r">
+		                	2010.05 - 至今(5年8个月) | 华菱星马汽车集团股份有限公司 | 财务总监<br/>2004.01 - 2010.01(6年) | 安徽华菱汽车股份有限公司 | 财务总监<br/>1998.04 - 2003.12(5年8个月) | 安徽星马汽车股份有限公司 | 财务部长
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5569723045B3283658920" data-name="王先生" data-userid="26650690" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5569723045B3283658920" class="mark" target="_blank" title="王先生" data-selector="link-resume"><strong>王先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					45岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  23年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="销售经理">销售经理</td>
+					<td class="text-left" title="杜邦公司汽车涂料事业部">杜邦公司汽车涂料事业部</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2001/09 - 2004/07：南开大学 | 国际经济学 | 硕士<br/>1989/09 - 1993/07：天津师范大学 | 材料化学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2000.12 - 至今(15年1个月) | 杜邦公司汽车涂料事业部 | 销售经理<br/>1995.12 - 2000.12(5年) | PPG 汽车涂料（天津） | 客户经理<br/>1993.07 - 1995.12(2年5个月) | 天津华北氧气厂 | 工艺工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="6887716349d1907934111" data-name="高先生" data-userid="3976216" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=6887716349d1907934111" class="mark" target="_blank" title="高先生" data-selector="link-resume"><strong>高先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					47岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  24年
+				  </td>
+					<td title="深圳">深圳</td>
+					<td title="项目总经理">项目总经理</td>
+					<td class="text-left" title="青岛万达东方影都投资有限公司">青岛万达东方影都投资有…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2009/06 - 2009/12：（清华大学）房地产CEO及EMBA培训班 | 房地产开发运营管理（标杆企业运营管理模式研究）、国学研讨 | MBA/EMBA<br/>1988/09 - 1992/07：甘肃工业大学 | 工民建/中级工程师职称 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.02 - 至今(1年11个月) | 青岛万达东方影都投资有限公司 | 项目总经理<br/>2013.02 - 2014.01(11个月) | 三亚华创七星房地产开发（集团）有限公司 | 副总经理<br/>2011.03 - 2013.01(1年10个月) | 保亭半山半岛雨林地产有限公司 | 副总经理兼总工程师
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9596521748m2959786890" data-name="悟净" data-userid="6787836" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9596521748m2959786890" class="mark" target="_blank" title="悟净" data-selector="link-resume"><strong>悟净</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					36岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  12年
+				  </td>
+					<td title="北京-东城区">北京-东城区</td>
+					<td title="部长级">部长级</td>
+					<td class="text-left" title="全球制造领先知名企业集团（高市值企业）">全球制造领先知名企业集…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2000/09 - 2004/07：北京 | 广告学 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2013.08 - 至今(2年5个月) | 全球制造领先知名企业集团（高市值企业） | 部长级<br/>2011.07 - 2013.08(2年1个月) | 中粮——蒙牛集团（快销品企业） | 公共事务总监<br/>2004.08 - 2011.07(6年11个月) | 新华社——新华网（互联网企业） | 总裁助理、总编室主编、品牌高级经理
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="5563292046F3280628330" data-name="李慧芳" data-userid="23983512" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=5563292046F3280628330" class="mark" target="_blank" title="李慧芳" data-selector="link-resume"><strong>李慧芳</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+						<i class="icons16 icons16-elite" data-title="精英简历，需使用猎币下载！"></i>
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					31岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  7年
+				  </td>
+					<td title="石家庄">石家庄</td>
+					<td title="票据中心主任">票据中心主任</td>
+					<td class="text-left" title="邮储银行石家庄分行">邮储银行石家庄分行</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2004/09 - 2008/07：河北科技师范学院 | 市场营销 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2008.08 - 至今(7年5个月) | 邮储银行石家庄分行 | 票据中心主任
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4117091400Q1789957002" data-name="陈先生" data-userid="21863852" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4117091400Q1789957002" class="mark" target="_blank" title="陈先生" data-selector="link-resume"><strong>陈先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					50岁
+					</td>
+					<td title="本科">本科</td>
+					<td>
+				  12年
+				  </td>
+					<td title="北京-朝阳区">北京-朝阳区</td>
+					<td title="副总裁">副总裁</td>
+					<td class="text-left" title="北京同世飞天商业管理顾问有限公司">北京同世飞天商业管理顾…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	1998/09 - 2002/07：中共中央党校 | 经济管理 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.04 - 至今(9个月) | 北京同世飞天商业管理顾问有限公司 | 副总裁<br/>2013.10 - 2015.02(1年4个月) | 江苏阳光（新沂)置业有限公司 | 副总裁<br/>2004.08 - 2013.08(9年) | 北京同世飞天商业管理顾问有限公司 | 副总裁
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo " >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="4908276965x2831379091" data-name="张霞" data-userid="794594" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=4908276965x2831379091" class="mark" target="_blank" title="张霞" data-selector="link-resume"><strong>张霞</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>女</td>
+					<td>
+					35岁
+					</td>
+					<td title="MBA/EMBA">MBA/E…</td>
+					<td>
+				  10年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="HR Supervisor">HR Supervisor</td>
+					<td class="text-left" title="Alpine Mayreder Construction Co., Ltd.">Alpine Mayreder Constr…</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info even-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2014/09 - 至今：中国农业大学 | 国际MBA | MBA/EMBA<br/>2001/09 - 2004/07：北京外国语大学 | 英语 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2014.06 - 至今(1年7个月) | Alpine Mayreder Construction Co., Ltd. | HR Supervisor<br/>2011.06 - 2014.02(2年8个月) | VFS GLOBAL | Senior HR Executive, China, North Asia Region<br/>2006.04 - 2011.06(5年2个月) | 威立...
+		              </div>
+		          </td>
+		        </tr>
+				
+				 
+				<tr class="table-list-peo table-list-peo-bg" >
+					<td class="text-right">
+					<input  type="checkbox" class="checkbox" value="9657878272Z2039714719" data-name="孙先生" data-userid="24262668" data-selector="checkbox-ui-list" name="res_id_encode"  />
+					</td>
+					<td class="text-left">
+		         	
+					 	<a href="/resume/showresumedetail/?res_id_encode=9657878272Z2039714719" class="mark" target="_blank" title="孙先生" data-selector="link-resume"><strong>孙先生</strong></a>
+		          		<i class="icons16 icons16-recommend"></i>
+						
+						
+					</td>
+					
+		          <td>男</td>
+					<td>
+					42岁
+					</td>
+					<td title="硕士">硕士</td>
+					<td>
+				  19年
+				  </td>
+					<td title="北京">北京</td>
+					<td title="财务总监">财务总监</td>
+					<td class="text-left" title="SPF Capital">SPF Capital</td>
+					<td>
+					2016-01-27
+					</td>
+				</tr>
+				<tr class="table-list-info odd-expend">
+		          <td colspan="10">
+		          	  
+		              <div class="table-list-info-l">
+		              	2012/09 - 2014/07：中国人民大学 | 项目管理 | 硕士<br/>2002/06 - 2007/06：ACCA 会员 | ACCA | 硕士<br/>1993/09 - 1997/07：中央财经大学 | 西方财务会计 | 本科
+		              </div>
+		              <div class="table-list-info-r">
+		                	2015.04 - 至今(9个月) | SPF Capital | 财务总监<br/>2012.11 - 2015.04(2年5个月) | 施耐德电气(中国)有限公司 | 数据中心事业部  大中华区 财务预算分析经理<br/>2007.03 - 2012.10(5年7个月) | 摩托罗拉(中国)公司 | 手机事业部： 高级财务分析师 & 高级预算分析师；网络事业部  信用经理
+		              </div>
+		          </td>
+		        </tr>
+				
+      		</tbody>
+			
+			<tfoot>
+				<tr>
+					<td class="text-left" colspan="4">
+						<label><input type="checkbox" class="checkbox" data-selector="checkbox-ui-all" name="ckbox" value="" />全选</label>
+						<a href="javascript:;" class="btn btn-light btn-small link-view-all">批量查看</a>
+					</td>
+					<td class="text-right" colspan="6">
+						<div class="pagerbar"><a class="first" href="/cvsearch/soResume/" title="首页"></a><a href="/cvsearch/soResume/">上页</a><a href="/cvsearch/soResume/">1</a><a class="current" href="javascript:;">2</a><a href="/cvsearch/soResume/?curPage=2">3</a><a href="/cvsearch/soResume/?curPage=3">4</a><a href="/cvsearch/soResume/?curPage=4">5</a><span class="ellipsis">…</span><a href="/cvsearch/soResume/?curPage=2">下页</a><a class="last" href="/cvsearch/soResume/?curPage=99" title="末页"></a><span class="addition">共100页<span class="redirect">跳转到<input class="pn" name="pn" type="text" value="3" />页<a class="go" href="javascript:;" onclick="var $pn=this.parentNode.getElementsByTagName('input')[0].value||1;$pn=/[^\d]/g.test($pn)?0:$pn;$pn=Math.min(Math.max($pn, 1),100);location.href='/cvsearch/soResume/?curPage=@pn@'.replace(/\@pn\@/ig, $pn-1);return false;">GO</a></span></span></div>
+					</td>
+				</tr>
+			</tfoot>
+			
+		</table>
+      		
+			
+	</div>
+	<!-- 广告位：猎头登录页banner 勿删除，活动广告位 -->
+  	<div id="LPAdSlots-855746" class="LPAdSlots"></div>
+</div>
+<!--#set var='compatible' value=''-->
+<footer id="footer-h-beta2">
+  <hr />
+  <div class="wrap">
+    <div class="copyright">
+      <div class="copy-side">
+        服务热线 (免长话费)<br /><strong>400-6838-789 转 2</strong><br /><small>工作日 9:00-19:00</small>
+      </div>
+      <div class="copy-main">
+        <div class="item">
+          <dl>
+            <dt>简介</dt>
+            <dd><a href="http://www.liepin.com/about/introduction.shtml" target="blank">猎聘网简介</a></dd>
+            <dd><a href="http://www.liepin.com/about/mediareports.shtml" target="_blank">媒体报道</a></dd>
+            <dd><a href="https://h.liepin.com/productinfo/showlatestpic" target="_blank">产品动态</a></dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl>
+            <dt>帮助</dt>
+            <dd><a href="https://h.liepin.com/profile/guide.shtml" target="blank">使用帮助</a></dd>
+            <dd><a href="http://www.liepin.com/user/hunter_agreement.shtml" target="_blank">用户协议</a></dd>
+            <dd><a href="https://h.liepin.com/feedback/showfeedback/" target="_blank">意见反馈</a></dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl>
+            <dt>共赢</dt>
+            <dd><a href="https://clt.liepin.com/" target="_blank">猎头公司</a></dd>
+            <dd><a href="http://www.liepin.com/cooperation.shtml" target="blank">网站合作</a></dd>
+            <dd><a href="http://www.liepin.com/inshr/index.shtml" target="_blank">加入猎聘网</a></dd>
+          </dl>
+        </div>
+        <div class="item item-weibo">
+          <p><a href="http://weibo.com/u/3958112196" target="_blank"><i class="weibo"></i></a></p>
+          <p><a class="btn-sina" href="http://weibo.com/u/3958112196" target="_blank"></a></p>
+        </div>
+        <div class="item item-apps">
+          <i class="weixin"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-footer">
+    <p>京ICP备09083200号 京ICP证070419号 人才服务许可证:RC0710280 京公网安备:11010502026763</p>
+    <p>Copyright&copy;2000-2016 liepin.com All Rights Reserved</p>
+  </div>
+</footer>
+<script type="text/javascript">
+FileManager.get('//concat.lietou-static.com/core/pc/revs/css/common/footer_fbdc3fc7.css');
+</script>
+<script type="text/javascript">FileManager.get('//concat.lietou-static.com/dev/h/pc/revs/v1/js/page/page.resume.so.list_68a8f77b.js');</script>
+<script type="text/javascript">
+window.$CONFIG = {
+  "tryVersion": false,
+   "senior_sc_onoff":false,
+   "subscription_num" : "0",
+   "res_ids" : "",
+   "h_level" : "0",
+   "condition_value" : {"keys":"","anykeys":"","titleKeys":"","csc_id":"","csc_name":"","subscribed":"","form_submit":"","so_flag":"","sortflag":"12","res_ids":"","expendflag":"1","pageSize":"50"},
+   "conditions" : null,
+   "hitkey": "null"
+};
+</script>
+<script type="text/javascript">window.FileManager&&FileManager.get('//concat.lietou-static.com/core/pc/revs/js/common/stat_f015f7d0.js');</script>
+<script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?a2647413544f5a04f00da7eee0d5e200";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script>
+</body>
+</html>

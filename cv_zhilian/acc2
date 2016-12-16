@@ -1,0 +1,28 @@
+{
+    "gcv":
+    [
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "bssf6335" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "bweg7342" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "shur880" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "guanzwen" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "aag123" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "vva123" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "ccv123" },
+        { "p": "zhaopin1234", "status": "不能搜索", "u": "aah123" },
+        { "p": "zhaopin123", "status": "不能搜索", "u": "edbw6336" },
+        { "p": "zhaopin123", "status": "不能搜索", "u": "kuop6256" }
+    ],
+    "main":
+    [
+        { "p": "zhilian123", "u": "hdst7325" },
+        { "p": "zhilian123", "u": "ghsd7335" },
+        { "p": "zhilian123", "u": "bsdp7336" },
+        { "p": "zhilian123", "u": "baet7358" },
+        { "p": "zhilian123", "u": "nsue7378" },
+        { "p": "zhilian123", "u": "bths7378" },
+        { "p": "zhilian123", "u": "dfrd7375" },
+        { "p": "zhilian123", "u": "bnsv8369" },
+        { "p": "zhilian123", "u": "bgte8337" },
+        { "p": "zhilian123", "u": "nbsf7372" }
+    ]
+}

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vs.proj">
+      <UniqueIdentifier>{583690E0-5BE4-483D-8818-A8C8DE6CD879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib">
+      <UniqueIdentifier>{639eab57-343b-4af2-ae0a-551ebff8c8c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{add655e7-e790-41ca-9f92-07766e9e7643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\base">
+      <UniqueIdentifier>{2954f9ba-47ef-438f-bf6c-c604eb1a1b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\include">
+      <UniqueIdentifier>{1a3482e3-7ce3-429c-a57a-4729381db6c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cmongo.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\pagestore.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\vs.proj\stdafx.cpp">
+      <Filter>vs.proj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\fmalloc.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\killcheck.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\modhelper.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptrrb.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\HelperFuncs.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\lock.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\sutil.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rbtdb.cpp" />
+    <ClCompile Include="..\..\shared\sharedfm.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\include\cptfuncs.c">
+      <Filter>utillib\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptrdbg.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pagestorebase.cpp" />
+    <ClCompile Include="..\..\shared\rbfilebase.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cmongo.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="..\pagestore.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\fmalloc.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\killcheck.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\modhelper.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\xptr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\xptrrb.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\atomic.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\HelperFuncs.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\lock.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\sutil.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rbtdb.h" />
+    <ClInclude Include="..\..\shared\sharedfm.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\basicrt.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\cptfuncs.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\rbtree.hpp">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\stdafx.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\stdafx_utillib.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

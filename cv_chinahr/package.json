@@ -1,0 +1,14 @@
+{
+  "name": "chinahr_cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gen_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "q-io": "^1.13.1",
+  }
+}

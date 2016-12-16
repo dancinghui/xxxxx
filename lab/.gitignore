@@ -1,0 +1,14 @@
+xcuserdata/
+hashd/hashd
+cmongo/cmongo
+/cutil/build/
+/cmongo/python/build/
+/cmongo/vs.proj/Debug/
+/cmongo/vs.proj/Release/
+/cmongo/vs.proj/x64/
+/cmongo/python.vsproj/x64/
+/getqqpwd/getqqpwd
+/shared/libshared.a
+*.suo
+*.vcxproj.user
+*.so

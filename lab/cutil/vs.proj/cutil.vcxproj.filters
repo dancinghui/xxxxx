@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{1774CBB5-AEC5-4F7C-8335-223383431FF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib">
+      <UniqueIdentifier>{537D223A-4A30-493A-8B6B-0FB6A9AF5D61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\base">
+      <UniqueIdentifier>{55BE6EF1-C8E0-4A6B-8278-352530EDC80E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\crypt">
+      <UniqueIdentifier>{20BD0374-0826-4D9A-A983-31C74BD428B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\include">
+      <UniqueIdentifier>{8908C191-EEA9-4CF5-B13C-78B681E63D10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vs.proj">
+      <UniqueIdentifier>{C1AD4E41-200B-4CCF-950B-9538173F4FE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utillib\fileformat">
+      <UniqueIdentifier>{6389293f-177b-493a-98f7-8e4a3bc62103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\jansson">
+      <UniqueIdentifier>{e769612e-fda4-43de-a2e5-029c6d96f525}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cutil.cpp">
+      <Filter>
+      </Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\modhelper.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\HelperFuncs.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\sutil.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\crypt\base64.cpp">
+      <Filter>utillib\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\crypt\cryptmisc.cpp">
+      <Filter>utillib\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\crypt\tea.cpp">
+      <Filter>utillib\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\include\cptfuncs.c">
+      <Filter>utillib\include</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vs.proj\stdafx.cpp">
+      <Filter>vs.proj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fhtml.cpp" />
+    <ClCompile Include="..\..\utillib\fileformat\basichtml.cpp">
+      <Filter>utillib\fileformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gfuncs.cpp" />
+    <ClCompile Include="..\..\shared\fmalloc.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\killcheck.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\rbfilebase.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\sharedfm.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptr.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptrdbg.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\xptrrb.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utillib\base\lock.cpp">
+      <Filter>utillib\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jobq.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\pyjobq.cpp" />
+    <ClCompile Include="..\qqptlogin.cpp" />
+    <ClCompile Include="..\..\shared\jansson\dump.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\error.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\hashtable.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\hashtable_seed.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\load.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\memory.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\pack_unpack.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\strbuffer.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\strconv.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\utf.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\jansson\value.c">
+      <Filter>shared\jansson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\process_single.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\hashm.h">
+      <Filter>
+      </Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\modhelper.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\HelperFuncs.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\lock.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\sutil.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\crypt\base64.h">
+      <Filter>utillib\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\crypt\cryptmisc.h">
+      <Filter>utillib\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\crypt\tea.h">
+      <Filter>utillib\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\basicrt.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\cptfuncs.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\stdafx.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\include\stdafx_utillib.h">
+      <Filter>utillib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\fileformat\basichtml.h">
+      <Filter>utillib\fileformat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fhtml.h" />
+    <ClInclude Include="..\..\shared\fmalloc.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\killcheck.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\sharedfm.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\xptr.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\xptrrb.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utillib\base\atomic.h">
+      <Filter>utillib\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jobq.h" />
+    <ClInclude Include="..\qqptlogin.h" />
+    <ClInclude Include="..\..\shared\process_single.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

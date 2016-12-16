@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		795C0E6A1C1BC8720031C0E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 795C0E671C1BC8720031C0E7 /* main.cpp */; };
+		795C0E6B1C1BC8720031C0E7 /* pagestore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 795C0E681C1BC8720031C0E7 /* pagestore.cpp */; };
+		7980EAD41C3BF2FE00FBA19E /* libshared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980EAD31C3BF2FE00FBA19E /* libshared.a */; };
+		7980EAD61C3BF31D00FBA19E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980EAD51C3BF31D00FBA19E /* CoreFoundation.framework */; };
+		7980EAD81C3BF37400FBA19E /* cpagestore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7980EAD71C3BF37400FBA19E /* cpagestore.cpp */; };
+		7980EADA1C3BF3A500FBA19E /* libpython2.7.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980EAD91C3BF3A500FBA19E /* libpython2.7.tbd */; };
+		7980EADD1C3BF45400FBA19E /* rbtdb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7980EADB1C3BF45400FBA19E /* rbtdb.cpp */; };
+		798A01881C1AE3CC002A25B7 /* libmongoc-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A01871C1AE3CC002A25B7 /* libmongoc-1.0.0.dylib */; };
+		798A018A1C1AE3DD002A25B7 /* libbson-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A01891C1AE3DD002A25B7 /* libbson-1.0.0.dylib */; };
+		798B759F1C3D1D5300F0AF08 /* pagestorebase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798B759E1C3D1D5300F0AF08 /* pagestorebase.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79E3DA521C1AD4840023DEEC /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		795C0E671C1BC8720031C0E7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		795C0E681C1BC8720031C0E7 /* pagestore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pagestore.cpp; sourceTree = SOURCE_ROOT; };
+		795C0E691C1BC8720031C0E7 /* pagestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pagestore.h; sourceTree = SOURCE_ROOT; };
+		7980EAD31C3BF2FE00FBA19E /* libshared.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshared.a; path = ../shared/libshared.a; sourceTree = "<group>"; };
+		7980EAD51C3BF31D00FBA19E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7980EAD71C3BF37400FBA19E /* cpagestore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cpagestore.cpp; path = python/cpagestore.cpp; sourceTree = SOURCE_ROOT; };
+		7980EAD91C3BF3A500FBA19E /* libpython2.7.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpython2.7.tbd; path = usr/lib/libpython2.7.tbd; sourceTree = SDKROOT; };
+		7980EADB1C3BF45400FBA19E /* rbtdb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rbtdb.cpp; sourceTree = SOURCE_ROOT; };
+		7980EADC1C3BF45400FBA19E /* rbtdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rbtdb.h; sourceTree = SOURCE_ROOT; };
+		798A01871C1AE3CC002A25B7 /* libmongoc-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libmongoc-1.0.0.dylib"; path = "../../../../../../../usr/local/lib/libmongoc-1.0.0.dylib"; sourceTree = "<group>"; };
+		798A01891C1AE3DD002A25B7 /* libbson-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libbson-1.0.0.dylib"; path = "../../../../../../../usr/local/lib/libbson-1.0.0.dylib"; sourceTree = "<group>"; };
+		798B759E1C3D1D5300F0AF08 /* pagestorebase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pagestorebase.cpp; sourceTree = SOURCE_ROOT; };
+		79E3DA541C1AD4840023DEEC /* cmongo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cmongo; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E3DA511C1AD4840023DEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7980EADA1C3BF3A500FBA19E /* libpython2.7.tbd in Frameworks */,
+				7980EAD61C3BF31D00FBA19E /* CoreFoundation.framework in Frameworks */,
+				7980EAD41C3BF2FE00FBA19E /* libshared.a in Frameworks */,
+				798A018A1C1AE3DD002A25B7 /* libbson-1.0.0.dylib in Frameworks */,
+				798A01881C1AE3CC002A25B7 /* libmongoc-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E3DA4B1C1AD4840023DEEC = {
+			isa = PBXGroup;
+			children = (
+				7980EAD91C3BF3A500FBA19E /* libpython2.7.tbd */,
+				7980EAD51C3BF31D00FBA19E /* CoreFoundation.framework */,
+				7980EAD31C3BF2FE00FBA19E /* libshared.a */,
+				798A01891C1AE3DD002A25B7 /* libbson-1.0.0.dylib */,
+				798A01871C1AE3CC002A25B7 /* libmongoc-1.0.0.dylib */,
+				79E3DA561C1AD4840023DEEC /* src */,
+				79E3DA551C1AD4840023DEEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E3DA551C1AD4840023DEEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E3DA541C1AD4840023DEEC /* cmongo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E3DA561C1AD4840023DEEC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				798B759E1C3D1D5300F0AF08 /* pagestorebase.cpp */,
+				7980EADB1C3BF45400FBA19E /* rbtdb.cpp */,
+				7980EADC1C3BF45400FBA19E /* rbtdb.h */,
+				7980EAD71C3BF37400FBA19E /* cpagestore.cpp */,
+				795C0E691C1BC8720031C0E7 /* pagestore.h */,
+				795C0E681C1BC8720031C0E7 /* pagestore.cpp */,
+				795C0E671C1BC8720031C0E7 /* main.cpp */,
+			);
+			name = src;
+			path = cmongo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E3DA531C1AD4840023DEEC /* cmongo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E3DA5B1C1AD4840023DEEC /* Build configuration list for PBXNativeTarget "cmongo" */;
+			buildPhases = (
+				79E3DA501C1AD4840023DEEC /* Sources */,
+				79E3DA511C1AD4840023DEEC /* Frameworks */,
+				79E3DA521C1AD4840023DEEC /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cmongo;
+			productName = cmongo;
+			productReference = 79E3DA541C1AD4840023DEEC /* cmongo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E3DA4C1C1AD4840023DEEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = xungeng;
+				TargetAttributes = {
+					79E3DA531C1AD4840023DEEC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 79E3DA4F1C1AD4840023DEEC /* Build configuration list for PBXProject "cmongo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79E3DA4B1C1AD4840023DEEC;
+			productRefGroup = 79E3DA551C1AD4840023DEEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E3DA531C1AD4840023DEEC /* cmongo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E3DA501C1AD4840023DEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7980EADD1C3BF45400FBA19E /* rbtdb.cpp in Sources */,
+				798B759F1C3D1D5300F0AF08 /* pagestorebase.cpp in Sources */,
+				7980EAD81C3BF37400FBA19E /* cpagestore.cpp in Sources */,
+				795C0E6B1C1BC8720031C0E7 /* pagestore.cpp in Sources */,
+				795C0E6A1C1BC8720031C0E7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		79E3DA591C1AD4840023DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/libmongoc-1.0",
+					"/usr/local/include/libbson-1.0",
+					../utillib,
+					../utillib/include,
+					../shared,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					../shared,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		79E3DA5A1C1AD4840023DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/libmongoc-1.0",
+					"/usr/local/include/libbson-1.0",
+					../utillib,
+					../utillib/include,
+					../shared,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					../shared,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79E3DA5C1C1AD4840023DEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/_home_/xungeng/ipin.work/getjd/lab/shared,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		79E3DA5D1C1AD4840023DEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/_home_/xungeng/ipin.work/getjd/lab/shared,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E3DA4F1C1AD4840023DEEC /* Build configuration list for PBXProject "cmongo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E3DA591C1AD4840023DEEC /* Debug */,
+				79E3DA5A1C1AD4840023DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E3DA5B1C1AD4840023DEEC /* Build configuration list for PBXNativeTarget "cmongo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E3DA5C1C1AD4840023DEEC /* Debug */,
+				79E3DA5D1C1AD4840023DEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E3DA4C1C1AD4840023DEEC /* Project object */;
+}

@@ -1,0 +1,28 @@
+{
+    "gcv":
+    [
+        { "p": "zhaopin789", "u": "ny123:ni98702" },
+        { "p": "zhaopin321", "u": "nuoyan:n09801" },
+        { "p": "zhaopin321", "u": "nuoyan:n09803" },
+        { "p": "zhaopin321", "u": "hongl22:hong002" },
+        { "p": "nanshan123", "u": "guanghan546:guan761" },
+        { "p": "nanshan123", "u": "guanghan546:guan763" },
+        { "p": "nanshan123", "u": "guanghan:guang542" },
+        { "p": "nanshan123", "u": "tyxi66:yangyang1" },
+        { "p": "nanshan123", "u": "tyxi66:yangyang3" },
+        { "p": "zhaopin1", "u": "244567890909:244872" }
+    ],
+    "main":
+    [
+        { "p": "zhaopin789", "u": "ny123:ni98703" },
+        { "p": "zhaopin321", "u": "nuoyan:n09802" },
+        { "p": "zhaopin321", "u": "hongl22:hong001" },
+        { "p": "zhaopin321", "u": "hongl22:hong003" },
+        { "p": "nanshan123", "u": "guanghan546:guan762" },
+        { "p": "nanshan123", "u": "guanghan:guang541" },
+        { "p": "nanshan123", "u": "guanghan:guang543" },
+        { "p": "nanshan123", "u": "tyxi66:yangyang2" },
+        { "p": "zhaopin1", "u": "244567890909:244871" },
+        { "p": "zhaopin1", "u": "244567890909:244873" }
+    ]
+}

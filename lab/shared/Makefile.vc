@@ -1,0 +1,32 @@
+OBJS=modhelper.o fmalloc.o xptr.o lock.o killcheck.o xptrrb.o sharedfm.o xptrdbg.o rbfilebase.o \
+HelperFuncs.o sutil.o base64.o cryptmisc.o tea.o basichtml.o cptfuncs.o process_single.o\
+dump.o error.o hashtable.o hashtable_seed.o load.o memory.o pack_unpack.o strbuffer.o strconv.o utf.o value.o
+CFLAGS=-W3 -EHsc -MD -O2 -I ../utillib -I ../utillib/include -I jansson -I C:\Python27\include \
+	-D  _CRT_SECURE_NO_WARNINGS -D  _SCL_SECURE_NO_WARNINGS -D UNICODE -D _UNICODE \
+	-I E:\work\util\inc_win
+
+
+all:shared.lib
+
+shared.lib: $(OBJS)
+	link /lib /nologo /out:$@ $(OBJS)
+
+.cpp.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
+
+{../utillib/base}.cpp.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
+
+
+{../utillib/crypt}.cpp.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
+
+
+{../utillib/fileformat}.cpp.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
+
+{../utillib/include}.c.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
+
+{./jansson}.c.o:
+	$(CC) /nologo /c $(CFLAGS) /Fo$@ $<
